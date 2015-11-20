@@ -10,6 +10,8 @@
 		09AE20781F8FA188003A572A /* DBFILESFileMetadata+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE20771F8FA188003A572A /* DBFILESFileMetadata+Coding.m */; };
 		09AE20791F8FA188003A572A /* DBFILESFileMetadata+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE20771F8FA188003A572A /* DBFILESFileMetadata+Coding.m */; };
 		1A5BAE7F17D04B0A00BABC01 /* overlays128.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BAE7E17D04B0A00BABC01 /* overlays128.png */; };
+		1A927EB221FC861200D2A755 /* UIDevice+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A927EB021FC861100D2A755 /* UIDevice+Private.m */; };
+		1A927EB321FC861200D2A755 /* UIDevice+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A927EB021FC861100D2A755 /* UIDevice+Private.m */; };
 		1AD65D7B17D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD65D7917D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m */; };
 		1AD971E717D2B6EC007097BC /* GBAControllerSkinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD971E617D2B6EC007097BC /* GBAControllerSkinDetailViewController.m */; };
 		1AD971F317D2C6ED007097BC /* GBAControllerSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD971F117D2C6ED007097BC /* GBAControllerSkin.m */; };
@@ -484,6 +486,9 @@
 		09AE20761F8FA188003A572A /* DBFILESFileMetadata+Coding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBFILESFileMetadata+Coding.h"; sourceTree = "<group>"; };
 		09AE20771F8FA188003A572A /* DBFILESFileMetadata+Coding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DBFILESFileMetadata+Coding.m"; sourceTree = "<group>"; };
 		1A5BAE7E17D04B0A00BABC01 /* overlays128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlays128.png; sourceTree = "<group>"; };
+		1A927EB021FC861100D2A755 /* UIDevice+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Private.m"; sourceTree = "<group>"; };
+		1A927EB121FC861200D2A755 /* UIDevice+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Private.h"; sourceTree = "<group>"; };
+		1A927EB421FC861D00D2A755 /* UITapticEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITapticEngine.h; sourceTree = "<group>"; };
 		1AD65D7817D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAControllerSkinSelectionViewController.h; sourceTree = "<group>"; };
 		1AD65D7917D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAControllerSkinSelectionViewController.m; sourceTree = "<group>"; };
 		1AD971E517D2B6EC007097BC /* GBAControllerSkinDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAControllerSkinDetailViewController.h; sourceTree = "<group>"; };
@@ -1592,6 +1597,9 @@
 		CC2D57051798F2EC00C616EB /* GBA4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1A927EB421FC861D00D2A755 /* UITapticEngine.h */,
+				1A927EB121FC861200D2A755 /* UIDevice+Private.h */,
+				1A927EB021FC861100D2A755 /* UIDevice+Private.m */,
 				CC2D570E1798F2EC00C616EB /* GBAAppDelegate.h */,
 				CC2D570F1798F2EC00C616EB /* GBAAppDelegate.mm */,
 				CC2D573F1798F44700C616EB /* GBAROMTableViewController.h */,
@@ -2302,6 +2310,7 @@
 				BFFBCCD71850505A005187DF /* GBASyncAllFilesOperation.mm in Sources */,
 				BFD03A9F1898E877001056A5 /* GBAEvent.m in Sources */,
 				BF356C7B18814A180005E1FC /* GBACheatTextView.m in Sources */,
+				1A927EB321FC861200D2A755 /* UIDevice+Private.m in Sources */,
 				BF58D31319B91550003B2B62 /* NSString+MD5.m in Sources */,
 				BF2290A5189C98BE0041F1AE /* NSFileManager+ForcefulMove.m in Sources */,
 				BFD98C451895FF0100A9432C /* unzip.c in Sources */,
@@ -2592,6 +2601,7 @@
 				CC50450E1814DC69009F7B9E /* Gzip_Reader.cpp in Sources */,
 				1AD971E717D2B6EC007097BC /* GBAControllerSkinDetailViewController.m in Sources */,
 				BF3E2BB718206D5B004231F6 /* UIAlertView+RSTAdditions.m in Sources */,
+				1A927EB221FC861200D2A755 /* UIDevice+Private.m in Sources */,
 				BFAA523B184F8B2B0019A90D /* GBASyncOperation.mm in Sources */,
 				CCFA717A179D2EAB00768D24 /* GuiTable1D.cc in Sources */,
 				CC5044F81814DC69009F7B9E /* Mode1.cpp in Sources */,
