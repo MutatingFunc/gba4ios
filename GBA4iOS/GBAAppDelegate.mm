@@ -32,6 +32,8 @@
 #import <Crashlytics/Crashlytics.h>
 #endif
 
+#import <SteamController/SteamController.h>
+
 NSString * const GBAUserRequestedToPlayROMNotification = @"GBAUserRequestedToPlayROMNotification";
 
 static NSString * const GBALocalNotificationTypeKey = @"type";
@@ -737,6 +739,7 @@ void applicationDidCrash(siginfo_t *info, ucontext_t *uap, void *context)
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [[SteamControllerManager sharedManager] scanForControllers];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

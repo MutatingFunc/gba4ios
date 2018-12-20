@@ -11,6 +11,7 @@ def all_pods
 	pod "PSPDFTextView", :git => 'https://github.com/steipete/PSPDFTextView.git'
 	pod "ObjectiveDropboxOfficial", "~> 3.3.4"
 	pod "CrashlyticsFramework", "~> 2.1.0"
+	pod "SteamController", :git => 'https://github.com/zydeco/SteamController.git'
 end
 
 target 'GBA4iOS' do
