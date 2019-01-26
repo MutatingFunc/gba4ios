@@ -18,6 +18,7 @@
 
 @property (strong, nonatomic) UIImageView *imageView;
 @property (strong, nonatomic) UIView *overlayView;
+@property (strong, nonatomic) UISelectionFeedbackGenerator *feedbackGenerator;
 
 @end
 
@@ -59,6 +60,9 @@
         [self addSubview:imageView];
         imageView;
     });
+	
+	self.feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+	[self.feedbackGenerator prepare];
 }
 
 #pragma mark - Getters / Setters
@@ -247,23 +251,7 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
 
 - (void)vibrate
 {
-    AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
-    
-    int64_t vibrationLength = 30;
-    
-    if ([[UIDevice currentDevice] platformType] == UIDevice5SiPhone)
-    {
-        // iPhone 5S has a weaker vibration motor, so we vibrate for 10ms longer to compensate
-        vibrationLength = 40;
-    }
-    
-    NSArray *pattern = @[@NO, @0, @YES, @(vibrationLength)];
-    
-    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-    dictionary[@"VibePattern"] = pattern;
-    dictionary[@"Intensity"] = @1;
-    
-    AudioServicesPlaySystemSoundWithVibration(kSystemSoundID_Vibrate, nil, dictionary);
+	[self.feedbackGenerator selectionChanged];
 }
 
 - (NSSet *)buttonsForTouch:(UITouch *)touch
